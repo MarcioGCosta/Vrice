@@ -3,6 +3,8 @@
 ## Installing progams
 sudo xbps-install -Su nerd-fonts-ttf android-tools elogind zsh-syntax-highlighting zsh-autosuggestions sway xorg-server-xwayland virt-manager libvirt qemu curl make pulsemixer qbittorrent ufw polkit polkit-elogind dbus-elogind ntp wireplumber firefox kitty mpv yt-dlp pipewire papirus-icon-theme alsa-pipewire libva-intel-driver rofi playerctl dash go zsh noto-fonts-emoji font-ibm-plex-ttf xorg-fonts neovim opendoas yarn pnpm wl-clipboard 
 
+wget https://cdn.pixabay.com/photo/2018/08/13/21/52/nature-3604097_960_720.jpg
+
 ## Moving folders
 mv $HOME/Vrice/config/.config/ $HOME/.config && mv $HOME/Vrice/config/.zshrc /$HOME/.zshrc &&
 mv $HOME/Vrice/config/.zshnev /$HOME/.zshnev && sudo mv $HOME/Vrice/config/pexelsmaxime-francis-2246476.jpg /etc/sway/back.png

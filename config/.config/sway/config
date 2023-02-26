@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term kitty
+set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -23,7 +23,7 @@ set $menu rofi -show drun -show-icons "Papirus-dark" -theme solarized -font "hac
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /etc/sway/back.png fit
+output * bg /etc/sway/back.png stretch
 #
 # Example configuration:
 #
@@ -70,6 +70,16 @@ output * bg /etc/sway/back.png fit
 
     # Start your launcher
     bindsym $mod+space exec $menu
+ 
+
+
+    bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +2
+    bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -2
+    bindsym XF86AudioPlay exec playerctl play-pause  
+    bindsym XF86AudioPrev exec playerctl previous
+    bindsym XF86AudioNext exec playerctl next
+    bindsym XF86AudioMute exec pulsemixer --toggle-mute
+
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -155,7 +165,7 @@ output * bg /etc/sway/back.png fit
     bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
@@ -166,11 +176,11 @@ output * bg /etc/sway/back.png fit
     # You can send windows there and get them back later.
 
     # Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
+
 
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
+
 #
 # Resizing containers:
 #
@@ -218,5 +228,14 @@ input * {
     xkb_layout "br"
     xkb_variant "dvorak"
 }
+
+default_border pixel 2
+default_floating_border pixel 2
+
+titlebar_padding 6
+titlebar_border_thickness 2
+
+exec pipewire
+exec pipewire-pulse
 
 include /etc/sway/config.d/*

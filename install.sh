@@ -1,7 +1,7 @@
 #!/bin/sh
 (
 ## Installing progams
-sudo xbps-install -Su google-fonts-ttf fonts-droid-ttf  texlive-fontsextra twemoji source-sans-pro noto-fonts-ttf nerd-fonts font-hack-ttf font-awesome cantarell-fonts nerd-fonts-ttf android-tools elogind zsh-syntax-highlighting zsh-autosuggestions sway xorg-server-xwayland virt-manager libvirt qemu curl make pulsemixer qbittorrent ufw polkit polkit-elogind dbus-elogind ntp wireplumber firefox mpv yt-dlp pipewire papirus-icon-theme alsa-pipewire libva-intel-driver rofi playerctl dash go zsh noto-fonts-emoji font-ibm-plex-ttf xorg-fonts neovim opendoas yarn pnpm wl-clipboard 
+sudo xbps-install -Su font-fira-otf google-fonts-ttf fonts-droid-ttf  texlive-fontsextra twemoji source-sans-pro noto-fonts-ttf nerd-fonts font-hack-ttf font-awesome cantarell-fonts nerd-fonts-ttf android-tools elogind zsh-syntax-highlighting zsh-autosuggestions sway xorg-server-xwayland virt-manager libvirt qemu curl make pulsemixer qbittorrent ufw polkit polkit-elogind dbus-elogind ntp wireplumber firefox mpv yt-dlp pipewire papirus-icon-theme alsa-pipewire libva-intel-driver rofi playerctl dash go zsh noto-fonts-emoji font-ibm-plex-ttf xorg-fonts neovim opendoas yarn pnpm wl-clipboard 
 
 wget https://cdn.pixabay.com/photo/2018/08/13/21/52/nature-3604097_960_720.jpg
 
